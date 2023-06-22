@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B5CBC762A44510B00C64476 /* MeditationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5CBC752A44510B00C64476 /* MeditationView.swift */; };
 		3B806EAF2A43843B0079A1C9 /* MeditationApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B806EAE2A43843B0079A1C9 /* MeditationApp.swift */; };
 		3B806EB12A43843B0079A1C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B806EB02A43843B0079A1C9 /* ContentView.swift */; };
 		3B806EB32A4384410079A1C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B806EB22A4384410079A1C9 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B5CBC752A44510B00C64476 /* MeditationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationView.swift; sourceTree = "<group>"; };
 		3B806EAB2A43843B0079A1C9 /* Meditation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meditation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B806EAE2A43843B0079A1C9 /* MeditationApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationApp.swift; sourceTree = "<group>"; };
 		3B806EB02A43843B0079A1C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				3B806EAE2A43843B0079A1C9 /* MeditationApp.swift */,
 				3B806EB02A43843B0079A1C9 /* ContentView.swift */,
+				3B5CBC752A44510B00C64476 /* MeditationView.swift */,
 				3B806EB22A4384410079A1C9 /* Assets.xcassets */,
 				3B806EB42A4384410079A1C9 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B806EB12A43843B0079A1C9 /* ContentView.swift in Sources */,
+				3B5CBC762A44510B00C64476 /* MeditationView.swift in Sources */,
 				3B806EAF2A43843B0079A1C9 /* MeditationApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +284,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LIBTOOLFLAGS = "-XCExpApple true -WLinkingC true -XCBuildForPre true";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appventure.Meditation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -309,6 +314,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LIBTOOLFLAGS = "-XCExpApple true -WLinkingC true -XCBuildForPre true";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appventure.Meditation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
