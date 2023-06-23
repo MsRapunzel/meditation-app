@@ -12,6 +12,13 @@
 		3B806EB12A43843B0079A1C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B806EB02A43843B0079A1C9 /* ContentView.swift */; };
 		3B806EB32A4384410079A1C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B806EB22A4384410079A1C9 /* Assets.xcassets */; };
 		3B806EB62A4384410079A1C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B806EB52A4384410079A1C9 /* Preview Assets.xcassets */; };
+		3BB610DC2A44754C00A77344 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BB610DB2A44754C00A77344 /* PlayerView.swift */; };
+		3BC2991E2A46332900761D9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BC2991D2A46332900761D9D /* LaunchScreen.storyboard */; };
+		3BC299242A46366200761D9D /* meditation-1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3BC299232A46366200761D9D /* meditation-1.mp3 */; };
+		3BF551372A447F74005ECC43 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF551362A447F74005ECC43 /* PlaybackControlButton.swift */; };
+		3BF5513B2A4484E9005ECC43 /* MeditationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5513A2A4484E9005ECC43 /* MeditationViewModel.swift */; };
+		3BF5513D2A44884F005ECC43 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5513C2A44884F005ECC43 /* Extensions.swift */; };
+		3BF5513F2A448A3D005ECC43 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF5513E2A448A3D005ECC43 /* AudioManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +28,14 @@
 		3B806EB02A43843B0079A1C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3B806EB22A4384410079A1C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B806EB52A4384410079A1C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3BB610DB2A44754C00A77344 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		3BC2991D2A46332900761D9D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3BC299232A46366200761D9D /* meditation-1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "meditation-1.mp3"; path = "../../../Downloads/meditation-1.mp3"; sourceTree = "<group>"; };
+		3BF551362A447F74005ECC43 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
+		3BF5513A2A4484E9005ECC43 /* MeditationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeditationViewModel.swift; sourceTree = "<group>"; };
+		3BF5513C2A44884F005ECC43 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		3BF5513E2A448A3D005ECC43 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		3BF551422A448FAB005ECC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,10 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				3B806EAE2A43843B0079A1C9 /* MeditationApp.swift */,
-				3B806EB02A43843B0079A1C9 /* ContentView.swift */,
-				3B5CBC752A44510B00C64476 /* MeditationView.swift */,
+				3BC299212A4635F600761D9D /* ViewModels */,
+				3BC299222A46360F00761D9D /* Views */,
+				3BC299262A46393A00761D9D /* AudioManagement */,
 				3B806EB22A4384410079A1C9 /* Assets.xcassets */,
+				3BF551422A448FAB005ECC43 /* Info.plist */,
+				3BC299232A46366200761D9D /* meditation-1.mp3 */,
 				3B806EB42A4384410079A1C9 /* Preview Content */,
+				3BC2991D2A46332900761D9D /* LaunchScreen.storyboard */,
 			);
 			path = Meditation;
 			sourceTree = "<group>";
@@ -68,6 +87,34 @@
 				3B806EB52A4384410079A1C9 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3BC299212A4635F600761D9D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3BF5513A2A4484E9005ECC43 /* MeditationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3BC299222A46360F00761D9D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3B806EB02A43843B0079A1C9 /* ContentView.swift */,
+				3B5CBC752A44510B00C64476 /* MeditationView.swift */,
+				3BB610DB2A44754C00A77344 /* PlayerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3BC299262A46393A00761D9D /* AudioManagement */ = {
+			isa = PBXGroup;
+			children = (
+				3BF5513E2A448A3D005ECC43 /* AudioManager.swift */,
+				3BF551362A447F74005ECC43 /* PlaybackControlButton.swift */,
+				3BF5513C2A44884F005ECC43 /* Extensions.swift */,
+			);
+			path = AudioManagement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B806EB62A4384410079A1C9 /* Preview Assets.xcassets in Resources */,
+				3BC2991E2A46332900761D9D /* LaunchScreen.storyboard in Resources */,
+				3BC299242A46366200761D9D /* meditation-1.mp3 in Resources */,
 				3B806EB32A4384410079A1C9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +190,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B806EB12A43843B0079A1C9 /* ContentView.swift in Sources */,
+				3BF551372A447F74005ECC43 /* PlaybackControlButton.swift in Sources */,
+				3BF5513F2A448A3D005ECC43 /* AudioManager.swift in Sources */,
 				3B5CBC762A44510B00C64476 /* MeditationView.swift in Sources */,
 				3B806EAF2A43843B0079A1C9 /* MeditationApp.swift in Sources */,
+				3BF5513B2A4484E9005ECC43 /* MeditationViewModel.swift in Sources */,
+				3BB610DC2A44754C00A77344 /* PlayerView.swift in Sources */,
+				3BF5513D2A44884F005ECC43 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,17 +322,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Meditation/Preview Content\"";
 				DEVELOPMENT_TEAM = 2V2JH8R3D2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kokoro Dojo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,17 +356,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Meditation/Preview Content\"";
 				DEVELOPMENT_TEAM = 2V2JH8R3D2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Meditation/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Kokoro Dojo";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
