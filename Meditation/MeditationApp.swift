@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct MeditationApp: App {
-    @StateObject var audioManager = AudioManager()
+    @StateObject var audioManager = PlayerManager()
     
     var body: some Scene {
         WindowGroup {

@@ -1,0 +1,51 @@
+[
+    {
+        "title": "Calm",
+        "description": "Find tranquility and peace within yourself with this calming meditation.",
+        "duration": 1,
+        "track": "meditation-calm",
+        "image": "flower-1"
+    },
+    {
+        "title": "Guided",
+        "description": "Follow along with a soothing voice as you immerse yourself in a peaceful state of mind.",
+        "duration": 1,
+        "track": "meditation-guided",
+        "image": "forest"
+    },
+    {
+        "title": "Energize",
+        "description": "Recharge your energy and awaken your senses with this invigorating meditation.",
+        "duration": 1,
+        "track": "meditation-energize",
+        "image": "flower-2"
+    },
+    {
+        "title": "Mindfulness",
+        "description": "Practice mindfulness and enhance your awareness with this extended meditation session.",
+        "duration": 1,
+        "track": "meditation-mindfulness",
+        "image": "sky"
+    },
+    {
+        "title": "Relax",
+        "description": "Clear your mind and slumber into nothingness. Allocate only a few moments for a quick breather.",
+        "duration": 1,
+        "track": "meditation-relax",
+        "image": "feather"
+    },
+    {
+        "title": "Balance",
+        "description": "Find balance in your life and cultivate a sense of harmony and equilibrium through this meditation.",
+        "duration": 1,
+        "track": "meditation-balance",
+        "image": "splash",
+    },
+    {
+        "title": "Gratitude",
+        "description": "Cultivate a sense of gratitude and appreciation for the present moment and all that you have in your life.",
+        "duration": 1,
+        "track": "meditation-gratitude",
+        "image": "sunrise"
+    }
+]

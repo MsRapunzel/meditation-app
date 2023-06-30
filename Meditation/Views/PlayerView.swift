@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct PlayerView: View {
-    @EnvironmentObject var audioManager: AudioManager
-    var meditationVM: MeditationViewModel
+    @EnvironmentObject var audioManager: PlayerManager
+    var meditation: Meditation
     var isPreview: Bool = false
     @State private var bindingValue: Double = 0.0
     @State private var isEditing: Bool = false
@@ -23,7 +23,9 @@ struct PlayerView: View {
     var body: some View {
         
         ZStack {
-            Image(meditationVM.meditation.image)
+            // MARK: - Background
+            // MARK: Image
+            Image(meditation.image)
                 .resizable()
                 .scaledToFill()
                 .frame(width: UIScreen.main.bounds.width)
@@ -35,6 +37,7 @@ struct PlayerView: View {
                 .opacity(0.25)
                 .ignoresSafeArea()
             
+            // MARK: - Buttons
             VStack(spacing: 32) {
                 // MARK: Dismiss Button
                 HStack{
@@ -53,7 +56,7 @@ struct PlayerView: View {
                 
                 // MARK: Title
                 
-                Text(meditationVM.meditation.title)
+                Text(meditation.title)
                     .font(.title)
                     .foregroundColor(.white)
                 
@@ -94,7 +97,6 @@ struct PlayerView: View {
                     // MARK: Playback Controls
                     HStack() {
                         // MARK: Repeat Button
-                        // let color: Color = audioManager.isLooping ? .teal : .white
                         PlaybackControlButton(
                             systemName: audioManager.isLooping ? "repeat.1" : "repeat") {
                                 audioManager.toggleLoop()
@@ -136,7 +138,7 @@ struct PlayerView: View {
         }
         
         .onAppear{
-            audioManager.startPlayer(track: meditationVM.meditation.track, isPreview: isPreview)
+            audioManager.startPlayer(track: meditation.track, isPreview: isPreview)
         }
         .onReceive(timer) { _ in
             guard let player = audioManager.player, !isEditing else { return}
@@ -146,9 +148,9 @@ struct PlayerView: View {
 }
 
 struct PlayerView_Previews: PreviewProvider {
-    static let meditationVM = MeditationViewModel(meditation: Meditation.data)
+  
     static var previews: some View {
-        PlayerView(meditationVM: meditationVM, isPreview: true)
-            .environmentObject(AudioManager())
+        PlayerView(meditation: Meditation.all[0], isPreview: true)
+            .environmentObject(PlayerManager())
     }
 }
